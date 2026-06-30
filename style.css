@@ -1,0 +1,6 @@
+body{margin:0;font-family:Georgia,serif;background:#111;color:#eee;line-height:1.7}
+nav{padding:20px;text-align:center}nav a{color:#d6b86a;margin:0 12px;text-decoration:none}
+main{max-width:760px;margin:auto;padding:40px 24px}h1{font-size:3rem}h2{font-weight:400}.by{color:#bbb}
+blockquote{border-left:3px solid #d6b86a;padding-left:16px;color:#ddd}
+.btn{background:#d6b86a;color:#111;padding:10px 18px;text-decoration:none;border-radius:6px}
+footer{text-align:center;padding:30px;color:#999;border-top:1px solid #333;margin-top:40px}
