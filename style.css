@@ -1,283 +1,251 @@
-/* Google Font */
+/* ==========================================
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+   THE WEIGHT OF KNOWING v2.0
+
+   Part A — Foundation, Header & Hero
+
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ---------- Brand Colors ---------- */
 
 :root{
 
-  --bg:#0f1115;
+    --bg:#0f1115;
 
-  --surface:#171a20;
+    --surface:#171a20;
 
-  --border:#2b313d;
+    --border:#2a2f38;
 
-  --text:#f3efe7;
+    --text:#f3efe7;
 
-  --muted:#b8b2a8;
+    --muted:#b8b2a8;
 
-  --accent:#caa76a;
+    --accent:#caa76a;
 
-  --accent-hover:#ddb97a;
+    --accent-hover:#ddb97a;
 
 }
 
+/* ---------- Reset ---------- */
+
 *{
 
-  margin:0;
+    margin:0;
 
-  padding:0;
+    padding:0;
 
-  box-sizing:border-box;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
 
 }
 
 body{
 
-  background:var(--bg);
+    background:var(--bg);
 
-  color:var(--text);
+    color:var(--text);
 
-  font-family:'Inter',sans-serif;
+    font-family:'Inter',sans-serif;
 
-  line-height:1.8;
-
-}
-
-header{
-
-  text-align:center;
-
-  padding:70px 20px 40px;
-
-  border-bottom:1px solid var(--border);
+    line-height:1.8;
 
 }
 
-header h1{
+/* ---------- Links ---------- */
 
-  font-family:'Cormorant Garamond',serif;
+a{
 
-  font-size:clamp(2.6rem, 8vw, 4rem);
-
-  font-weight:700;
-
-  letter-spacing:.5px;
+    text-decoration:none;
 
 }
 
-header p{
+/* ---------- Header ---------- */
 
-  color:var(--muted);
+.site-header{
 
-  margin-top:10px;
+    text-align:center;
 
-  font-size:1.1rem;
+    padding:70px 20px 50px;
+
+    border-bottom:1px solid var(--border);
 
 }
+
+.brand-mark{
+
+    color:var(--accent);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    letter-spacing:6px;
+
+    margin-bottom:20px;
+
+}
+
+.site-header h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(3rem,8vw,5rem);
+
+    line-height:1.1;
+
+    margin-bottom:18px;
+
+}
+
+.tagline{
+
+    color:var(--muted);
+
+    font-size:1.15rem;
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+}
+
+/* ---------- Navigation ---------- */
 
 nav{
 
-  margin-top:30px;
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
 
 }
 
 nav a{
 
-  color:var(--text);
+    color:var(--text);
 
-  text-decoration:none;
+    font-weight:600;
 
-  margin:0 18px;
-
-  font-weight:600;
-
-  transition:.3s;
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-  color:var(--accent);
+    color:var(--accent);
 
 }
+
+/* ---------- Main ---------- */
 
 main{
 
-  max-width:900px;
+    max-width:1000px;
 
-  margin:80px auto;
+    margin:auto;
 
-  padding:0 24px;
+    padding:80px 24px;
 
 }
 
+/* ---------- Hero ---------- */
+
 .hero{
 
-  text-align:center;
+    text-align:center;
 
-  margin-bottom:80px;
+    margin-bottom:100px;
+
+}
+
+.eyebrow{
+
+    color:var(--accent);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:28px;
 
 }
 
 .hero h2{
 
-  font-family:'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond',serif;
 
-  font-size:3rem;
+    font-size:clamp(3rem,9vw,5rem);
 
-  line-height:1.2;
+    line-height:1.15;
 
-  margin-bottom:24px;
+    margin-bottom:35px;
+
+}
+
+blockquote{
+
+    max-width:760px;
+
+    margin:0 auto 40px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.8rem;
+
+    font-style:italic;
+
+    color:var(--accent);
 
 }
 
 .hero p{
 
-  color:var(--muted);
+    max-width:720px;
 
-  max-width:700px;
+    margin:0 auto 45px;
 
-  margin:0 auto 40px;
+    color:var(--muted);
 
-  font-size:1.15rem;
+    font-size:1.15rem;
 
 }
 
+/* ---------- Button ---------- */
+
 .button{
 
-  display:inline-block;
+    display:inline-block;
 
-  background:var(--accent);
+    background:var(--accent);
 
-  color:#111;
+    color:#111;
 
-  padding:14px 30px;
+    padding:16px 36px;
 
-  border-radius:999px;
+    border-radius:999px;
 
-  text-decoration:none;
+    font-weight:700;
 
-  font-weight:600;
-
-  transition:.3s;
+    transition:.3s;
 
 }
 
 .button:hover{
 
-  background:var(--accent-hover);
+    background:var(--accent-hover);
 
-  transform:translateY(-2px);
-
-}
-
-.card{
-
-  background:var(--surface);
-
-  border:1px solid var(--border);
-
-  border-radius:18px;
-
-  padding:35px;
-
-  margin-bottom:30px;
-
-}
-
-.card h2{
-
-  font-family:'Cormorant Garamond',serif;
-
-  font-size:2rem;
-
-  margin-bottom:10px;
-
-}
-
-.card p{
-
-  color:var(--muted);
-
-  margin-bottom:18px;
-
-}
-
-.card a{
-
-  color:var(--accent);
-
-  text-decoration:none;
-
-  font-weight:600;
-
-}
-
-.card a:hover{
-
-  color:var(--accent-hover);
-
-}
-
-main h1{
-
-  font-family:'Cormorant Garamond',serif;
-
-  font-size:3.2rem;
-
-  margin-bottom:25px;
-
-}
-
-main p{
-
-  margin-bottom:24px;
-
-  font-size:1.1rem;
-
-}
-
-footer{
-
-  margin-top:90px;
-
-  text-align:center;
-
-  padding:40px 20px;
-
-  border-top:1px solid var(--border);
-
-  color:var(--muted);
-
-}
-.eyebrow {
-
-    color: var(--accent);
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    font-size: 0.85rem;
-
-    font-weight: 600;
-
-    margin-bottom: 16px;
-
-}
-
-
-.eyebrow {
-
-    color: var(--accent);
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    font-size: 0.85rem;
-
-    font-weight: 600;
-
-    margin-bottom: 16px;
+    transform:translateY(-3px);
 
 }
